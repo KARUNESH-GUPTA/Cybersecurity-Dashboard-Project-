@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karunesh Gupta - Cyberpunk Security Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="cyber-logo">⚡</div>
+            <div class="loading-text">Initializing Quantum Security Protocols...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="matrix-text">01001000 01100001 01100011 01101011 01101001 01101110 01100111</div>
+        </div>
+        <div class="loading-particles"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <span class="brand-icon">⚡</span>
+                <span class="brand-text">K.GUPTA</span>
+                <span class="brand-subtitle">CYBER_SECURITY</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">HOME</a>
+                <a href="#profile" class="nav-link" data-section="profile">PROFILE</a>
+                <a href="#cybersecurity" class="nav-link" data-section="cybersecurity">CYBER_HUB</a>
+                <a href="#education" class="nav-link" data-section="education">EDUCATION</a>
+                <a href="#tools" class="nav-link" data-section="tools">TOOLS</a>
+                <a href="#entertainment" class="nav-link" data-section="entertainment">GAMES</a>
+                <a href="#music" class="nav-link" data-section="music">MUSIC</a>
+                <a href="#news" class="nav-link" data-section="news">NEWS</a>
+            </div>
+
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" title="Toggle Theme">🌙</button>
+                <button class="lang-toggle" id="lang-toggle" title="Language">EN</button>
+                <button class="auth-btn" id="auth-btn">LOGIN</button>
+                <div class="user-avatar hidden" id="user-avatar">
+                    <div class="avatar-glow"></div>
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='%234ade80'%3E%3Cpath d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/%3E%3C/svg%3E" alt="User Avatar" class="avatar-img">
+                    <div class="user-dropdown">
+                        <a href="#dashboard" data-section="dashboard">DASHBOARD</a>
+                        <a href="#settings" data-section="settings">SETTINGS</a>
+                        <button id="logout-btn">LOGOUT</button>
+                    </div>
+                </div>
+                <button class="mobile-toggle" id="mobile-toggle">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Section -->
+        <section id="home" class="section home-section">
+            <div class="hero-background">
+                <div class="cyber-grid"></div>
+                <div class="floating-particles"></div>
+                <div class="neon-lines"></div>
+            </div>
+            
+            <div class="hero-content container">
+                <div class="hero-text">
+                    <div class="anime-mascot">
+                        <div class="mascot-image">🛡️</div>
+                        <div class="mascot-speech">Welcome to my cyber realm!</div>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="gradient-text glitch-text" data-text="KARUNESH GUPTA">KARUNESH GUPTA</span>
+                        <span class="subtitle neon-text">CYBERPUNK_SECURITY_RESEARCHER</span>
+                    </h1>
+                    <p class="hero-description">
+                        Building quantum-safe security solutions for the digital frontier. 
+                        Explore interactive labs, cutting-edge tools, and cyberpunk entertainment.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn--primary cyber-btn" data-section="cybersecurity">
+                            <span>ENTER_CYBER_HUB</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                        <button class="btn btn--outline cyber-btn" data-section="profile">
+                            <span>VIEW_PROFILE</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                        <button class="btn btn--secondary cyber-btn auth-trigger">
+                            <span>JOIN_MATRIX</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card neon-border">
+                        <div class="stat-number counter" data-target="500">0</div>
+                        <div class="stat-label">SECURITY_LABS</div>
+                    </div>
+                    <div class="stat-card neon-border">
+                        <div class="stat-number counter" data-target="150">0</div>
+                        <div class="stat-label">TOOLS_CREATED</div>
+                    </div>
+                    <div class="stat-card neon-border">
+                        <div class="stat-number counter" data-target="5000">0</div>
+                        <div class="stat-label">STUDENTS_HELPED</div>
+                    </div>
+                    <div class="stat-card neon-border">
+                        <div class="stat-number counter" data-target="99">0</div>
+                        <div class="stat-label">THREAT_DETECTION_%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Access Dashboard -->
+            <div class="cyber-dashboard container">
+                <h3 class="dashboard-title">QUANTUM_ACCESS_TERMINAL</h3>
+                <div class="tools-grid">
+                    <div class="tool-card cyber-card" data-tool="password-checker">
+                        <div class="tool-icon">🔐</div>
+                        <div class="tool-name">PASSWORD_ANALYZER</div>
+                        <div class="tool-status">ONLINE</div>
+                    </div>
+                    <div class="tool-card cyber-card" data-tool="hash-calculator">
+                        <div class="tool-icon">🔢</div>
+                        <div class="tool-name">HASH_GENERATOR</div>
+                        <div class="tool-status">ONLINE</div>
+                    </div>
+                    <div class="tool-card cyber-card" data-tool="network-scanner">
+                        <div class="tool-icon">🌐</div>
+                        <div class="tool-name">NETWORK_SCANNER</div>
+                        <div class="tool-status">ONLINE</div>
+                    </div>
+                    <div class="tool-card cyber-card" data-tool="crypto-tool">
+                        <div class="tool-icon">🛡️</div>
+                        <div class="tool-name">CRYPTO_SUITE</div>
+                        <div class="tool-status">ONLINE</div>
+                    </div>
+                    <div class="tool-card cyber-card" data-tool="ai-chatgpt">
+                        <div class="tool-icon">🤖</div>
+                        <div class="tool-name">AI_ASSISTANT</div>
+                        <div class="tool-status">ONLINE</div>
+                    </div>
+                    <div class="tool-card cyber-card" data-tool="prank-tools">
+                        <div class="tool-icon">😈</div>
+                        <div class="tool-name">PRANK_SUITE</div>
+                        <div class="tool-status">ONLINE</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Live News Feed -->
+            <div class="news-feed container">
+                <h3 class="feed-title">LIVE_THREAT_INTELLIGENCE</h3>
+                <div class="news-ticker">
+                    <div class="ticker-content" id="news-ticker">
+                        <!-- News items will be populated by JavaScript -->
+                    </div>
+                </div>
+                <div class="news-preview" id="news-preview">
+                    <!-- Latest news will be populated here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="section profile-section hidden">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title glitch-text" data-text="PROFILE_DATABASE">PROFILE_DATABASE</h2>
+                    <div class="anime-character">
+                        <div class="character-avatar">👨‍💻</div>
+                        <div class="character-quote">"The future belongs to those who code it!"</div>
+                    </div>
+                </div>
+                
+                <div class="profile-container">
+                    <div class="profile-main">
+                        <div class="profile-card cyber-card">
+                            <div class="profile-header">
+                                <div class="profile-avatar">
+                                    <div class="avatar-ring"></div>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSisM7YseQxvFEzkz7jbpVuoNLdkA1uYnuEatdFRqhagga1qcx0J06xvjCa6LWGy7xqO_4&usqp=CAU xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 24 24' fill='%234ade80'%3E%3Cpath d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/%3E%3C/svg%3E" alt="Karunesh Gupta">
+                                    <div class="avatar-status">ONLINE</div>
+                                </div>
+                                <div class="profile-info">
+                                    <h3 class="profile-name">KARUNESH GUPTA</h3>
+                                    <div class="profile-title">CYBERSECURITY_RESEARCHER</div>
+                                    <div class="profile-location">🌍 INDIA</div>
+                                </div>
+                            </div>
+
+                            <div class="profile-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value" id="profile-xp">0</span>
+                                    <span class="stat-label">XP_POINTS</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value" id="profile-level">BEGINNER</span>
+                                    <span class="stat-label">SECURITY_LEVEL</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value" id="profile-badges">0</span>
+                                    <span class="stat-label">BADGES_EARNED</span>
+                                </div>
+                            </div>
+
+                            <div class="profile-bio">
+                                <h4>BIO_DATA.exe</h4>
+                                <p class="bio-text">
+                                    B.Tech (CSE) student, cybersecurity enthusiast and aspiring researcher. 
+                                    I build ethical security tools, study cryptography, and create hands-on labs 
+                                    to teach secure coding and defensive techniques. Passionate about combining 
+                                    physics and cybersecurity to develop innovative solutions.
+                                </p>
+                            </div>
+
+                            <div class="profile-education">
+                                <h4>EDUCATION.sys</h4>
+                                <div class="edu-item">
+                                    <div class="edu-degree">B.Tech in Computer Science & Engineering</div>
+                                    <div class="edu-institute">Allenhouse Institute of Technology</div>
+                                    <div class="edu-semester">Current: 5th Semester</div>
+                                </div>
+                            </div>
+
+                            <div class="profile-skills">
+                                <h4>SKILL_SET.dll</h4>
+                                <div class="skills-grid">
+                                    <span class="skill-tag">CYBERSECURITY</span>
+                                    <span class="skill-tag">QUANTUM_COMPUTING</span>
+                                    <span class="skill-tag">DATA_STRUCTURES</span>
+                                    <span class="skill-tag">ML_&_DATA_ANALYSIS</span>
+                                    <span class="skill-tag">WEB_DEVELOPMENT</span>
+                                    <span class="skill-tag">CRYPTOGRAPHY</span>
+                                    <span class="skill-tag">ETHICAL_HACKING</span>
+                                    <span class="skill-tag">NETWORK_SECURITY</span>
+                                </div>
+                            </div>
+
+                            <div class="profile-goals">
+                                <h4>CAREER_OBJECTIVES.ini</h4>
+                                <ul class="goals-list">
+                                    <li>🎯 Become a Scientist (Cybersecurity + Quantum Physics)</li>
+                                    <li>🎓 Pursue M.Tech/MS/PhD (India & Abroad)</li>
+                                    <li>🏆 GATE Preparation - Target: IIT Kanpur</li>
+                                    <li>🔬 Research in Quantum Cryptography & Secure Computing</li>
+                                </ul>
+                            </div>
+
+                            <div class="profile-hobbies">
+                                <h4>PERSONAL_INTERESTS.cfg</h4>
+                                <div class="hobbies-grid">
+                                    <div class="hobby-item">🎵 Singing (Sad & Painful songs)</div>
+                                    <div class="hobby-item">🎸 Playing Guitar</div>
+                                    <div class="hobby-item">✍️ Writing Articles & Blogs</div>
+                                    <div class="hobby-item">🤖 Creating AI Projects</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-sidebar">
+                        <div class="achievements-panel cyber-card">
+                            <h4>ACHIEVEMENT_LOG</h4>
+                            <div class="achievements-grid" id="achievements-grid">
+                                <!-- Achievements will be populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <div class="social-panel cyber-card">
+                            <h4>NETWORK_LINKS</h4>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/karunesh-gupta-507b242a9" target="_blank" class="social-link linkedin">
+                                    <span class="social-icon">💼</span>
+                                    <span>LINKEDIN</span>
+                                </a>
+                                <a href="https://www.hackerrank.com/profile/karuneshgupta786" target="_blank" class="social-link hackerrank">
+                                    <span class="social-icon">👨‍💻</span>
+                                    <span>HACKERRANK</span>
+                                </a>
+                                <a href="https://www.credly.com/users/karunesh-gupta" target="_blank" class="social-link credly">
+                                    <span class="social-icon">🏆</span>
+                                    <span>CREDLY</span>
+                                </a>
+                                <a href="https://learn.microsoft.com/en-us/users/karuneshgupta3838/" target="_blank" class="social-link microsoft">
+                                    <span class="social-icon">🏢</span>
+                                    <span>MICROSOFT_LEARN</span>
+                                </a>
+                                <a href="https://sunilkirana.my.canva.site/karunesh-gupta" target="_blank" class="social-link portfolio">
+                                    <span class="social-icon">🌐</span>
+                                    <span>PORTFOLIO</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Entertainment Section -->
+        <section id="entertainment" class="section entertainment-section hidden">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title glitch-text" data-text="ENTERTAINMENT_ZONE">ENTERTAINMENT_ZONE</h2>
+                    <div class="anime-character">
+                        <div class="character-avatar">🎮</div>
+                        <div class="character-quote">"Let's have some fun in the matrix!"</div>
+                    </div>
+                </div>
+                
+                <div class="games-container">
+                    <div class="games-grid">
+                        <div class="game-card cyber-card" data-game="cyber-memory">
+                            <div class="game-icon">🧠</div>
+                            <h3>CYBER_MEMORY</h3>
+                            <p>Match cybersecurity terms and definitions</p>
+                            <div class="game-difficulty">EASY</div>
+                            <button class="btn btn--primary cyber-btn">PLAY_GAME</button>
+                        </div>
+
+                        <div class="game-card cyber-card" data-game="password-race">
+                            <div class="game-icon">🏃‍♂️</div>
+                            <h3>PASSWORD_RACE</h3>
+                            <p>Learn password security by solving challenges</p>
+                            <div class="game-difficulty">MEDIUM</div>
+                            <button class="btn btn--primary cyber-btn">PLAY_GAME</button>
+                        </div>
+
+                        <div class="game-card cyber-card" data-game="network-defense">
+                            <div class="game-icon">🛡️</div>
+                            <h3>NETWORK_DEFENSE</h3>
+                            <p>Protect your network from cyber attacks</p>
+                            <div class="game-difficulty">HARD</div>
+                            <button class="btn btn--primary cyber-btn">PLAY_GAME</button>
+                        </div>
+
+                        <div class="game-card cyber-card" data-game="binary-puzzle">
+                            <div class="game-icon">1️⃣</div>
+                            <h3>BINARY_PUZZLE</h3>
+                            <p>Decode binary messages to advance</p>
+                            <div class="game-difficulty">MEDIUM</div>
+                            <button class="btn btn--primary cyber-btn">PLAY_GAME</button>
+                        </div>
+
+                        <div class="game-card cyber-card" data-game="crypto-quiz">
+                            <div class="game-icon">🔐</div>
+                            <h3>CRYPTO_QUIZ</h3>
+                            <p>Test your cryptography knowledge</p>
+                            <div class="game-difficulty">HARD</div>
+                            <button class="btn btn--primary cyber-btn">PLAY_GAME</button>
+                        </div>
+
+                        <div class="game-card cyber-card" data-game="hacker-typing">
+                            <div class="game-icon">⌨️</div>
+                            <h3>HACKER_TYPING</h3>
+                            <p>Type like a real cyberpunk hacker</p>
+                            <div class="game-difficulty">MEDIUM</div>
+                            <button class="btn btn--primary cyber-btn">PLAY_GAME</button>
+                        </div>
+
+                        <div class="game-card cyber-card" data-game="cyber-snake">
+                            <div class="game-icon">🐍</div>
+                            <h3>CYBER_SNAKE</h3>
+                            <p>Classic snake with cyberpunk twist</p>
+                            <div class="game-difficulty">EASY</div>
+                            <button class="btn btn--primary cyber-btn">PLAY_GAME</button>
+                        </div>
+
+                        <div class="game-card cyber-card" data-game="quantum-bits">
+                            <div class="game-icon">⚛️</div>
+                            <h3>QUANTUM_BITS</h3>
+                            <p>Manipulate quantum states to solve puzzles</p>
+                            <div class="game-difficulty">EXPERT</div>
+                            <button class="btn btn--primary cyber-btn">PLAY_GAME</button>
+                        </div>
+
+                        <div class="game-card cyber-card" data-game="security-trivia">
+                            <div class="game-icon">❓</div>
+                            <h3>SECURITY_TRIVIA</h3>
+                            <p>Answer cybersecurity questions quickly</p>
+                            <div class="game-difficulty">MEDIUM</div>
+                            <button class="btn btn--primary cyber-btn">PLAY_GAME</button>
+                        </div>
+
+                        <div class="game-card cyber-card" data-game="phishing-detector">
+                            <div class="game-icon">🎣</div>
+                            <h3>PHISHING_DETECTOR</h3>
+                            <p>Identify phishing emails and websites</p>
+                            <div class="game-difficulty">MEDIUM</div>
+                            <button class="btn btn--primary cyber-btn">PLAY_GAME</button>
+                        </div>
+
+                        <div class="game-card cyber-card" data-game="firewall-config">
+                            <div class="game-icon">🔥</div>
+                            <h3>FIREWALL_CONFIG</h3>
+                            <p>Configure firewall rules to block threats</p>
+                            <div class="game-difficulty">HARD</div>
+                            <button class="btn btn--primary cyber-btn">PLAY_GAME</button>
+                        </div>
+
+                        <div class="game-card cyber-card" data-game="forensics-mystery">
+                            <div class="game-icon">🔍</div>
+                            <h3>FORENSICS_MYSTERY</h3>
+                            <p>Solve digital forensics cases</p>
+                            <div class="game-difficulty">EXPERT</div>
+                            <button class="btn btn--primary cyber-btn">PLAY_GAME</button>
+                        </div>
+
+                        <div class="game-card cyber-card" data-game="algo-visualizer">
+                            <div class="game-icon">📊</div>
+                            <h3>ALGO_VISUALIZER</h3>
+                            <p>Interactive algorithm visualization game</p>
+                            <div class="game-difficulty">MEDIUM</div>
+                            <button class="btn btn--primary cyber-btn">PLAY_GAME</button>
+                        </div>
+
+                        <div class="game-card cyber-card" data-game="sql-injection">
+                            <div class="game-icon">💉</div>
+                            <h3>SQL_INJECTION_PREV</h3>
+                            <p>Learn to prevent SQL injection attacks</p>
+                            <div class="game-difficulty">HARD</div>
+                            <button class="btn btn--primary cyber-btn">PLAY_GAME</button>
+                        </div>
+
+                        <div class="game-card cyber-card" data-game="debugging-challenge">
+                            <div class="game-icon">🐛</div>
+                            <h3>DEBUG_CHALLENGE</h3>
+                            <p>Find and fix security vulnerabilities</p>
+                            <div class="game-difficulty">EXPERT</div>
+                            <button class="btn btn--primary cyber-btn">PLAY_GAME</button>
+                        </div>
+
+                        <div class="game-card cyber-card" data-game="cyberpunk-runner">
+                            <div class="game-icon">🏃‍♂️</div>
+                            <h3>CYBERPUNK_RUNNER</h3>
+                            <p>Endless runner in cyberpunk world</p>
+                            <div class="game-difficulty">EASY</div>
+                            <button class="btn btn--primary cyber-btn">PLAY_GAME</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="entertainment-extras">
+                    <div class="fun-tools-grid">
+                        <div class="fun-tool cyber-card">
+                            <h4>🎭 MEME_GENERATOR</h4>
+                            <div class="meme-controls">
+                                <input type="text" id="meme-top" class="form-control" placeholder="Top text">
+                                <input type="text" id="meme-bottom" class="form-control" placeholder="Bottom text">
+                                <button class="btn btn--secondary" id="generate-meme">GENERATE_MEME</button>
+                            </div>
+                            <div class="meme-preview" id="meme-preview"></div>
+                        </div>
+
+                        <div class="fun-tool cyber-card">
+                            <h4>😂 CYBER_JOKES</h4>
+                            <div class="joke-display">
+                                <p id="current-joke">Why don't hackers get stressed? They handle exceptions!</p>
+                                <button class="btn btn--secondary" id="new-joke">NEW_JOKE</button>
+                            </div>
+                        </div>
+
+                        <div class="fun-tool cyber-card">
+                            <h4>🎨 MATRIX_GENERATOR</h4>
+                            <div class="matrix-controls">
+                                <button class="btn btn--secondary" id="toggle-matrix">TOGGLE_MATRIX</button>
+                                <div class="matrix-preview" id="matrix-preview"></div>
+                            </div>
+                        </div>
+
+                        <div class="fun-tool cyber-card">
+                            <h4>🎪 PRANK_SIMULATOR</h4>
+                            <div class="prank-controls">
+                                <button class="btn btn--secondary" id="fake-hacker">FAKE_HACKER_SCREEN</button>
+                                <button class="btn btn--secondary" id="fake-virus">FAKE_VIRUS_SCAN</button>
+                                <button class="btn btn--secondary" id="fake-update">FAKE_SYSTEM_UPDATE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Section -->
+        <section id="music" class="section music-section hidden">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title glitch-text" data-text="MUSIC_STUDIO">MUSIC_STUDIO</h2>
+                    <div class="anime-character">
+                        <div class="character-avatar">🎵</div>
+                        <div class="character-quote">"Music is the universal language of souls!"</div>
+                    </div>
+                </div>
+                
+                <div class="music-player">
+                    <div class="player-header">
+                        <h3>CYBERPUNK_RADIO</h3>
+                        <div class="player-status">ONLINE</div>
+                    </div>
+                    
+                    <div class="music-visualizer">
+                        <canvas id="visualizer-canvas"></canvas>
+                        <div class="now-playing">
+                            <div class="track-info">
+                                <div class="track-title" id="track-title">No Track Selected</div>
+                                <div class="track-artist" id="track-artist">Unknown Artist</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="player-controls">
+                        <button class="control-btn" id="prev-btn">⏮️</button>
+                        <button class="control-btn play-pause" id="play-pause">▶️</button>
+                        <button class="control-btn" id="next-btn">⏭️</button>
+                        <button class="control-btn" id="shuffle-btn">🔀</button>
+                        <button class="control-btn" id="repeat-btn">🔁</button>
+                    </div>
+                    
+                    <div class="player-progress">
+                        <span class="time-current">00:00</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <span class="time-total">00:00</span>
+                    </div>
+                    
+                    <div class="volume-control">
+                        <span>🔊</span>
+                        <input type="range" id="volume-slider" min="0" max="100" value="70">
+                        <span>100%</span>
+                    </div>
+                </div>
+
+                <div class="playlist-section">
+                    <h4>CYBERPUNK_PLAYLISTS</h4>
+                    <div class="playlists-grid">
+                        <div class="playlist-card active" data-playlist="cyberpunk">
+                            <div class="playlist-cover">🌃</div>
+                            <div class="playlist-info">
+                                <h5>Cyberpunk Vibes</h5>
+                                <span>Electronic • 12 tracks</span>
+                            </div>
+                        </div>
+                        <div class="playlist-card" data-playlist="coding">
+                            <div class="playlist-cover">💻</div>
+                            <div class="playlist-info">
+                                <h5>Coding Sessions</h5>
+                                <span>Focus • 8 tracks</span>
+                            </div>
+                        </div>
+                        <div class="playlist-card" data-playlist="anime">
+                            <div class="playlist-cover">🎌</div>
+                            <div class="playlist-info">
+                                <h5>Anime OST</h5>
+                                <span>Soundtrack • 15 tracks</span>
+                            </div>
+                        </div>
+                        <div class="playlist-card" data-playlist="guitar">
+                            <div class="playlist-cover">🎸</div>
+                            <div class="playlist-info">
+                                <h5>Guitar Melodies</h5>
+                                <span>Acoustic • 10 tracks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="track-list">
+                    <h4>CURRENT_PLAYLIST</h4>
+                    <div class="tracks" id="track-list">
+                        <!-- Tracks will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other sections would continue here... -->
+        <!-- For brevity, I'm including key sections -->
+        
+        <!-- Tools Section -->
+        <section id="tools" class="section tools-section hidden">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title glitch-text" data-text="CYBER_TOOLS">CYBER_TOOLS</h2>
+                </div>
+                
+                <div class="tools-dashboard">
+                    <div class="tools-nav">
+                        <button class="tool-nav-btn active" data-tool="password-tools">PASSWORD_TOOLS</button>
+                        <button class="tool-nav-btn" data-tool="hash-tools">HASH_TOOLS</button>
+                        <button class="tool-nav-btn" data-tool="network-tools">NETWORK_TOOLS</button>
+                        <button class="tool-nav-btn" data-tool="image-editor">IMAGE_EDITOR</button>
+                        <button class="tool-nav-btn" data-tool="pdf-tools">PDF_TOOLS</button>
+                        <button class="tool-nav-btn" data-tool="ai-tools">AI_TOOLS</button>
+                    </div>
+                    
+                    <div class="tool-content">
+                        <div class="tool-panel active" data-tool="password-tools">
+                            <h3>🔐 PASSWORD_SECURITY_SUITE</h3>
+                            <div class="tool-interface">
+                                <input type="password" id="password-input" class="form-control" placeholder="Enter password to analyze">
+                                <div class="password-strength" id="password-strength">
+                                    <div class="strength-bar">
+                                        <div class="strength-fill"></div>
+                                    </div>
+                                    <div class="strength-label">Enter a password</div>
+                                </div>
+                                <button class="btn btn--primary" id="generate-password">GENERATE_SECURE_PASSWORD</button>
+                                <div class="generated-password" id="generated-password"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Other tool panels would be added here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cybersecurity, Education, News sections would follow similar pattern -->
+
+    </main>
+
+    <!-- Game Modal -->
+    <div id="game-modal" class="modal hidden">
+        <div class="modal-content cyber-modal">
+            <div class="modal-header">
+                <h3 id="game-title">GAME_SESSION</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="game-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Auth Modal -->
+    <div id="auth-modal" class="modal hidden">
+        <div class="modal-content cyber-modal">
+            <div class="modal-header">
+                <h3 id="auth-title">SYSTEM_ACCESS</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="auth-container">
+                    <form id="login-form" class="auth-form">
+                        <div class="form-group">
+                            <input type="email" id="login-email" class="form-control cyber-input" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="login-password" class="form-control cyber-input" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width cyber-btn">
+                            <span>ACCESS_GRANTED</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                        <p class="auth-switch">New user? <a href="#" id="show-signup">Create Account</a></p>
+                    </form>
+
+                    <form id="signup-form" class="auth-form hidden">
+                        <div class="form-group">
+                            <input type="text" id="signup-name" class="form-control cyber-input" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="signup-email" class="form-control cyber-input" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="signup-password" class="form-control cyber-input" placeholder="Password" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="signup-confirm" class="form-control cyber-input" placeholder="Confirm Password" required>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width cyber-btn">
+                            <span>CREATE_ACCOUNT</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                        <p class="auth-switch">Have account? <a href="#" id="show-login">Login</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notifications -->
+    <div id="notifications" class="notifications"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h4>KARUNESH_GUPTA.exe</h4>
+                    <p>Cyberpunk Security Researcher & Ethical Hacker</p>
+                    <div class="footer-anime">
+                        <span>🛡️</span>
+                        <span>"The future is now, old man!" - Anime Quote</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h5>QUICK_ACCESS</h5>
+                    <a href="#cybersecurity" data-section="cybersecurity">Cyber Hub</a>
+                    <a href="#tools" data-section="tools">Security Tools</a>
+                    <a href="#entertainment" data-section="entertainment">Games</a>
+                    <a href="#music" data-section="music">Music Studio</a>
+                </div>
+                <div class="footer-social">
+                    <h5>NETWORK_CONNECTIONS</h5>
+                    <a href="https://www.linkedin.com/in/karunesh-gupta-507b242a9" target="_blank">LinkedIn Profile</a>
+                    <a href="https://www.hackerrank.com/profile/karuneshgupta786" target="_blank">HackerRank</a>
+                    <a href="https://www.credly.com/users/karunesh-gupta" target="_blank">Credly Badges</a>
+                    <a href="https://learn.microsoft.com/en-us/users/karuneshgupta3838/" target="_blank">Microsoft Learn</a>
+                    <a href="https://sunilkirana.my.canva.site/karunesh-gupta" target="_blank">Portfolio Site</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 KARUNESH_GUPTA.sys - Cyberpunk Security Portfolio | Built with ❤️ for ethical cybersecurity</p>
+                <div class="footer-matrix">
+                    <span>01001000 01100001 01100011 01101011</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
